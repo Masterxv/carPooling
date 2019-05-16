@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/info-post"></ion-back-button>
+    </ion-buttons>
+    <ion-title>info-search</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list lines="full">
+    <ion-item>
+      <ion-label>Start place</ion-label>
+      <ion-input required type="text" placeholder="start" [(ngModel)]="todo.start"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Destination</ion-label>
+      <ion-input required type="text" placeholder="end" [(ngModel)]="todo.end"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Time</ion-label>
+      <ion-input required type="number" placeholder="timing" [(ngModel)]="todo.timing"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label>Enter Vehical number</ion-label>
+      <ion-input required type="number" placeholder="vehical" [(ngModel)]="todo.vehical"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label>number of seat</ion-label>
+      <ion-input required type="number" placeholder="seat" [(ngModel)]="todo.seat"></ion-input>
+    </ion-item>
+    
+    <!--    <ion-item>
+      <ion-input required type="number" placeholder="Priority" [(ngModel)]="todo.priority"></ion-input>
+    </ion-item>  -->
+
+  </ion-list>
+  <ion-button expands="full" (click)="saveTodo()">Save</ion-button>
+
+</ion-content>

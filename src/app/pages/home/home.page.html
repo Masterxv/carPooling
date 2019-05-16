@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar>
+
+    <div>
+      <ion-row nowrap align-items-start>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title class="heading">
+          CarPooling
+        </ion-title>
+
+        <ion-row nowrap align-items-start>
+          <ion-button slot="end" (click)="goInfoPost()">
+            <ion-icon name="albums"></ion-icon>
+            <!-- <img src="/assets/icon/favicon.png">  -->
+          </ion-button>
+          <ion-button slot="end" (click)="goInfoSearch()">
+            <ion-icon name="create"></ion-icon>
+            <!-- <img src="/assets/icon/favicon.png">  -->
+          </ion-button>
+        </ion-row>
+      </ion-row>
+    </div>
+
+  </ion-toolbar>
+
+  <!-- 
+
+  <ion-row>
+    <ion-col text-start padding-top>
+      
+    </ion-col>
+    <ion-col text-end>
+      <ion-button (click)="loadMap()" shape="round" fill="outline">
+        <ion-icon slot="start" name="locate"></ion-icon>
+        Where I Am
+      </ion-button>
+    </ion-col>
+  </ion-row>
+-->
+
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+        <ion-label floating>Enter Address</ion-label>
+        <ion-input id="txtHome" type="text"></ion-input>
+    </ion-item>
+    <agm-map></agm-map>
+<!--
+  <agm-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom">
+    <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+  </agm-map>
+-->
+
+  <!-- <app-google-map></app-google-map> -->
+  <!-- 
+  <div class="form.group">
+    <label for="place">search google place</label>
+    
+    <input type="text" class="form-control" id="place" #search[formControl]="searchControl" autocomplete="off"
+      autocapitalize="off" spellcheck="off">
+      
+  </div>
+
+  <ion-row>
+    <ion-col>
+      
+      <agm-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom" style="height: 600px;">
+        <agm-marker *ngFor="lat latlng of latlongs" [latitude]="latlong.latitude" [longitude]="latlong.longitude"></agm-marker>
+      </agm-map>
+      
+    </ion-col>
+  </ion-row>
+-->
+  <!--
+  <div class="map-wrapper">
+    <div id="map_center">
+      <img src="../../assets/icon/center_marker.png" />
+    </div>
+    <div #map id="map"></div>
+  </div>
+  <div id="address">
+    <span>{{address}}</span>
+  </div>
+  -->
+</ion-content>

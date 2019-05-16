@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    
+  <!--  
+  <ion-button (click)="openModal()">modal</ion-button>  -->
+  <ion-list lines="full">
+    <!-- 
+    <ion-item>
+      <ion-label>Task name</ion-label>
+      <ion-input type="text" placeholder="task" [(ngModel)]="todo.task"></ion-input>
+    </ion-item>
+    -->
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input required type="text" placeholder="name" [(ngModel)]="todo.name"></ion-input>
+      <ion-label>Last name</ion-label>
+      <ion-input required type="text" placeholder="lastName" [(ngModel)]="todo.lastName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select placeholder="Select Gender" [(ngModel)]="todo.gender">
+        <ion-select-option value="female">Female</ion-select-option>
+        <ion-select-option value="male">Male</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <!--  
+    <ion-item>
+        <ion-label>Gender</ion-label>
+      <ion-input required type="text" placeholder="gender" [(ngModel)]="todo.gender"></ion-input>
+    </ion-item>
+    -->
+    <ion-item>
+      <ion-label>E-mail</ion-label>
+      <ion-input required type="text" placeholder="email" [(ngModel)]="todo.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mobile Number</ion-label>
+      <ion-input required type="number" placeholder="mobile" [(ngModel)]="todo.mobile"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expands="full" (click)="saveTodo()">Save</ion-button>
+
+
+</ion-content>
